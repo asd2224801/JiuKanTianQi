@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.weiqi.jiukantianqi.MainActivity">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/header_imageView"
+        android:src="@drawable/sunrise"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="广州"
+
+        android:id="@+id/diqu_shi_text"
+        android:layout_marginBottom="43dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginStart="60dp"
+        android:layout_alignBottom="@+id/header_imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#e8e1e1"
+        android:textSize="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="多云"
+        android:id="@+id/textView"
+        android:layout_marginBottom="18dp"
+        android:layout_alignBottom="@+id/header_imageView"
+        android:layout_alignLeft="@+id/diqu_shi_text"
+        android:layout_alignStart="@+id/diqu_shi_text"
+        android:textColor="#817f7f"
+        android:textSize="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前温度:20."
+        android:id="@+id/textView2"
+        android:layout_below="@+id/header_imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp" />
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/tianqiicon"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/shower_rain" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="体感："
+        android:id="@+id/tigantext"
+        android:layout_alignTop="@+id/tianqiicon"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="100dp"
+        android:layout_marginEnd="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:id="@+id/tigannumber"
+        android:layout_alignTop="@+id/tigantext"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="湿度："
+        android:id="@+id/shidutext"
+        android:layout_below="@+id/tigantext"
+        android:layout_alignLeft="@+id/tigantext"
+        android:layout_alignStart="@+id/tigantext"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="76%"
+        android:id="@+id/shidunumber"
+        android:layout_alignTop="@+id/shidutext"
+        android:layout_alignRight="@+id/header_imageView"
+        android:layout_alignEnd="@+id/header_imageView"
+        android:layout_marginRight="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="可见:"
+        android:id="@+id/kejiantext"
+        android:layout_below="@+id/shidutext"
+        android:layout_alignLeft="@+id/shidutext"
+        android:layout_alignStart="@+id/shidutext"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10KM"
+        android:id="@+id/kejiannumber"
+        android:layout_alignTop="@+id/kejiantext"
+        android:layout_alignRight="@+id/header_imageView"
+        android:layout_alignEnd="@+id/header_imageView"
+        android:layout_marginRight="26dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="风向："
+        android:id="@+id/fengxiangtext"
+        android:layout_below="@+id/kejiantext"
+        android:layout_alignLeft="@+id/kejiantext"
+        android:layout_alignStart="@+id/kejiantext"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="东南"
+        android:id="@+id/textView3"
+        android:layout_alignRight="@+id/tigannumber"
+        android:layout_alignEnd="@+id/tigannumber"
+        android:layout_alignBottom="@+id/fengxiangtext" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="明日天气:"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/tianqiicon"
+        android:layout_alignLeft="@+id/tianqiicon"
+        android:layout_alignStart="@+id/tianqiicon"
+        android:layout_marginTop="20dp"
+        android:focusableInTouchMode="false"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB"
+        android:id="@+id/mingritiqnqidata"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/header_imageView"
+        android:layout_alignStart="@+id/header_imageView"
+        android:layout_marginBottom="10dp" />
+
+
+</RelativeLayout>
